@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="Harisree - Child-friendly Malayalam learning platform">
+        <meta name="author" content="Harisree">
+
+        <title>Harisree - Malayalam Learning Platform</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/templatemo-topic-listing.css" rel="stylesheet">
+    </head>
+    <style>
+         /* Contact Section Specific Styles */
+    .contact-section .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 0.5rem;
+    }
+    
+    .contact-section .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+    
+    .contact-section .card-header {
+        padding: 1.25rem 1.25rem 0;
+    }
+    
+    .contact-section .card-body {
+        padding: 1.25rem;
+    }
+    
+    .contact-section .google-map {
+        min-height: 300px;
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+    
+    .contact-section address {
+        font-style: normal;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 991.98px) {
+        .contact-section .col-lg-5,
+        .contact-section .col-lg-7 {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+    
+    @media (max-width: 767.98px) {
+        .contact-section .card {
+            margin-bottom: 1.5rem;
+        }
+    }
+            /* Footer Specific Styles */
+    .footer-brand {
+        max-width: 300px;
+    }
+    
+    .footer-links li a {
+        transition: all 0.3s ease;
+    }
+    
+    .hover-primary:hover {
+        color: #0d6efd !important;
+        padding-left: 5px;
+    }
+    
+    .contact-info li {
+        transition: all 0.3s ease;
+    }
+    
+    .contact-info li:hover {
+        transform: translateX(5px);
+    }
+    
+    .social-icons a {
+        transition: all 0.3s ease;
+        display: inline-block;
+    }
+    
+    .social-icons a:hover {
+        transform: translateY(-3px);
+        color: #0a58ca !important;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 767.98px) {
+        .footer-brand {
+            max-width: 100%;
+            text-align: left;
+        }
+        
+        .social-icons {
+            justify-content: leftr;
+        }
+        
+        .footer-links, .contact-info {
+            text-align: left;
+        }
+    }
+        /* Tab styling */
+        .nav-tabs {
+            border-bottom: 2px solid #dee2e6;
+            justify-content: center;
+        }
+        
+        .nav-tabs .nav-link {
+            border: none;
+            color: #6c757d;
+            font-weight: 600;
+            padding: 1rem 1.5rem;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .nav-tabs .nav-link:hover {
+            color: #0d6efd;
+            transform: translateY(-5px);
+        }
+        
+        .nav-tabs .nav-link.active {
+            color: #0d6efd;
+            background-color: transparent;
+            border-bottom: 3px solid #0d6efd;
+            transform: translateY(-5px);
+        }
+        
+        .level-icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Card animations */
+        .custom-block {
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .custom-block:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+        }
+        
+        .custom-block-image {
+            transition: all 0.5s ease;
+        }
+        
+        .custom-block:hover .custom-block-image {
+            transform: scale(1.05);
+        }
+        
+        /* List item styling */
+        .list-group-item {
+            border-left: 0;
+            border-right: 0;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .list-group-item:hover {
+            background-color: #f8f9fa;
+            padding-left: 10px;
+        }
+    </style>
+    
+    <body id="top">
+        <main>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="d-flex flex-grow-1 justify-content-between align-items-center">
+                        <a class="navbar-brand mx-auto mx-lg-0" href="index.html">
+                            <img 
+                                src="./images/harisree21.png" 
+                                alt="Harisree Logo" 
+                                width="220" 
+                                height="200"
+                                style="display: block; max-width: 100%; height: auto;"
+                            >
+                        </a>
+                        <button class="navbar-toggler order-lg-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+            
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            </li>
+            
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">Learning Levels</a>
+                            </li>
+                
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">How it works</a>
+                            </li>
+            
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_4">FAQs</a>
+                            </li>
+                
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <h1 class="text-white text-center">Discover. Learn. Enjoy Malayalam</h1>
+                            <h6 class="text-center" style="color: #dee2e6;">Child-friendly platform for Malayalam language learning</h6>
+                            <form method="get" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="featured-section">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                            <div class="custom-block bg-white shadow-lg">
+                                <a href="#">
+                                    <div class="d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Malayalam Alphabet</h5>
+                                                <p>Start your child's journey with the beautiful Malayalam script through fun activities.</p>
+                                        </div>
+                                    </div>
+                                    <img src="images/2151657411.jpg" class="custom-block-image img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="custom-block custom-block-overlay">
+                                <div class="d-flex flex-column h-100">
+                                    <img src="./images/2151657320.jpg" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-overlay-text d-flex">
+                                        <div>
+                                            <h5 class="text-white mb-2">For Parents</h5>
+                                            <p class="text-white">Bridge the communication gap with your children through our specially designed Malayalam learning program.</p>
+                                            <a href="#" class="btn custom-btn mt-2 mt-lg-3">Learn More</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="social-share d-flex">
+                                        <p class="text-white me-4">Share:</p>
+                                        <ul class="social-icon">
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-twitter"></a>
+                                            </li>
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-facebook"></a>
+                                            </li>
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-pinterest"></a>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="custom-icon bi-bookmark ms-auto"></a>
+                                    </div>
+                                    <div class="section-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="explore-section section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="mb-4">Our Learning Levels</h2>
+                        </div>
+                    </div>
+                </div>
+            
+                <section class="py-5" id="section_2">
+                    <div class="container">
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <ul class="nav nav-tabs" id="levelsTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="level1-tab" data-bs-toggle="tab" data-bs-target="#level1-tab-pane" type="button" role="tab" aria-controls="level1-tab-pane" aria-selected="true">
+                                            <span>Harisree</span>
+                                        </button>
+                                    </li>
+                    
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="level2-tab" data-bs-toggle="tab" data-bs-target="#level2-tab-pane" type="button" role="tab" aria-controls="level2-tab-pane" aria-selected="false">
+                                            <span>Reading Corner</span>
+                                        </button>
+                                    </li>
+                    
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="level3-tab" data-bs-toggle="tab" data-bs-target="#level3-tab-pane" type="button" role="tab" aria-controls="level3-tab-pane" aria-selected="false">
+                                            <span>Ezhuthani</span>
+                                        </button>
+                                    </li>
+                    
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="level4-tab" data-bs-toggle="tab" data-bs-target="#level4-tab-pane" type="button" role="tab" aria-controls="level4-tab-pane" aria-selected="false">
+                                            <span>Kilikonchal</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="levelsTabContent">
+                            <!-- Level 1 - Hari Shree -->
+                            <div class="tab-pane fade show active" id="level1-tab-pane" role="tabpanel" aria-labelledby="level1-tab" tabindex="0">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <h3 class="mb-4">Level 1: Harisree</h3>
+                                        <p class="lead">Perfect introduction to Malayalam for complete beginners</p>
+                                        <ul class="list-group list-group-flush mb-4">
+                                            <li class="list-group-item animate__animated animate__fadeInLeft animate__delay-1s">
+                                                <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                                Familiarization of Malayalam alphabet
+                                            </li>
+                                            <li class="list-group-item animate__animated animate__fadeInLeft animate__delay-2s">
+                                                <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                                Identification of sound and letters
+                                            </li>
+                                            <li class="list-group-item animate__animated animate__fadeInLeft animate__delay-3s">
+                                                <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                                Ability to read, write and speak mini words
+                                            </li>
+                                            <li class="list-group-item animate__animated animate__fadeInLeft animate__delay-4s">
+                                                <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                                Interactive games and activities
+                                            </li>
+                                        </ul>
+                                        <div class="animate__animated animate__fadeInUp animate__delay-5s">
+                                            <a href="#section_5" class="btn btn-primary btn-lg me-3">Enroll Now</a>
+                                            <a href="#" class="btn btn-outline-primary btn-lg">Sample Lesson</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mt-4 mt-lg-0">
+                                        <img src="./images/topics/harisree.jpg" alt="Hari Shree Level" class="img-fluid rounded-4 shadow">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Level 2 - Reading Corner -->
+                            <div class="tab-pane fade" id="level2-tab-pane" role="tabpanel" aria-labelledby="level2-tab" tabindex="0">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <h3 class="mb-4">Level 2: Reading Corner</h3>
+                                        <p class="lead">Build reading fluency and comprehension skills</p>
+                                        <ul class="list-group list-group-flush mb-4">
+                                            <li class="list-group-item animate__animated animate__fadeInLeft animate__delay-1s">
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                Fluency in reading and writing simple sentences
+                                            </li>
+                                            <li class="list-group-item animate__animated animate__fadeInLeft animate__delay-2s">
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                More familiarity with the language
+                                            </li>
+                                            <li class="list-group-item animate__animated animate__fadeInLeft animate__delay-3s">
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                Increased ability in reading and writing
+                                            </li>
+                                            <li class="list-group-item animate__animated animate__fadeInLeft animate__delay-4s">
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                Expansion of vocabulary
+                                            </li>
+                                        </ul>
+                                        <div class="animate__animated animate__fadeInUp animate__delay-5s">
+                                            <a href="#section_5" class="btn btn-success btn-lg me-3">Enroll Now</a>
+                                            <a href="#" class="btn btn-outline-success btn-lg">Sample Lesson</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mt-4 mt-lg-0">
+                                        <img src="./images/topics/reading.jpg" alt="Reading Corner Level" class="img-fluid rounded-4 shadow">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Level 3 - Ezhuthani -->
+                            <div class="tab-pane fade" id="level3-tab-pane" role="tabpanel" aria-labelledby="level3-tab" tabindex="0">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <h3 class="mb-4">Level 3: Ezhuthani</h3>
+                                        <p class="lead">Develop writing skills and creative expression</p>
+                                        <ul class="list-group list-group-flush mb-4">
+                                            <li class="list-group-item animate__animated animate__fadeInLeft animate__delay-1s">
+                                                <i class="bi bi-check-circle-fill text-warning me-2"></i>
+                                                Promotes organic writing
+                                            </li>
+                                            <li class="list-group-item animate__animated animate__fadeInLeft animate__delay-2s">
+                                                <i class="bi bi-check-circle-fill text-warning me-2"></i>
+                                                Familiarization of common usages in communication
+                                            </li>
+                                            <li class="list-group-item animate__animated animate__fadeInLeft animate__delay-3s">
+                                                <i class="bi bi-check-circle-fill text-warning me-2"></i>
+                                                Creative writing exercises
+                                            </li>
+                                            <li class="list-group-item animate__animated animate__fadeInLeft animate__delay-4s">
+                                                <i class="bi bi-check-circle-fill text-warning me-2"></i>
+                                                Grammar and sentence structure
+                                            </li>
+                                        </ul>
+                                        <div class="animate__animated animate__fadeInUp animate__delay-5s">
+                                            <a href="#section_5" class="btn btn-warning btn-lg text-white me-3">Enroll Now</a>
+                                            <a href="#" class="btn btn-outline-warning btn-lg">Sample Lesson</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mt-4 mt-lg-0">
+                                        <img src="./images/topics/ezhuthani.jpg" alt="Ezhuthani Level" class="img-fluid rounded-4 shadow">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Level 4 - Kilikonchal -->
+                            <div class="tab-pane fade" id="level4-tab-pane" role="tabpanel" aria-labelledby="level4-tab" tabindex="0">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <h3 class="mb-4">Level 4: Kilikonchal</h3>
+                                        <p class="lead">Advanced language skills through engaging activities</p>
+                                        <ul class="list-group list-group-flush mb-4">
+                                            <li class="list-group-item animate__animated animate__fadeInLeft animate__delay-1s">
+                                                <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                                Child-friendly and child-centered approach
+                                            </li>
+                                            <li class="list-group-item animate__animated animate__fadeInLeft animate__delay-2s">
+                                                <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                                Promotes fascination with words and linguistic beauty
+                                            </li>
+                                            <li class="list-group-item animate__animated animate__fadeInLeft animate__delay-3s">
+                                                <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                                Classes with learning buddies
+                                            </li>
+                                            <li class="list-group-item animate__animated animate__fadeInLeft animate__delay-4s">
+                                                <i class="bi bi-check-circle-fill text-info me-2"></i>
+                                                Cultural immersion activities
+                                            </li>
+                                        </ul>
+                                        <div class="animate__animated animate__fadeInUp animate__delay-5s">
+                                            <a href="#section_5" class="btn btn-info btn-lg me-3">Enroll Now</a>
+                                            <a href="#" class="btn btn-outline-info btn-lg">Sample Lesson</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mt-4 mt-lg-0">
+                                        <img src="./images/topics/kilikonchal.jpg" alt="Kilikonchal Level" class="img-fluid rounded-4 shadow">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section class="timeline-section section-padding" id="section_3">
+                <div class="section-overlay"></div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="text-white mb-4">How does it work?</h2>
+                        </div>
+
+                        <div class="col-lg-10 col-12 mx-auto">
+                            <div class="timeline-container">
+                                <ul class="vertical-scrollable-timeline" id="vertical-scrollable-timeline">
+                                    <div class="list-progress">
+                                        <div class="inner"></div>
+                                    </div>
+
+                                    <li>
+                                        <h4 class="text-white mb-3">Choose the Right Level</h4>
+                                        <p class="text-white">Select the appropriate learning level based on your child's current Malayalam language proficiency.</p>
+                                        <div class="icon-holder">
+                                          <i class="bi-search"></i>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <h4 class="text-white mb-3">Interactive Learning</h4>
+                                        <p class="text-white">Engage with our child-friendly lessons that make learning Malayalam fun and effective.</p>
+                                        <div class="icon-holder">
+                                          <i class="bi-bookmark"></i>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <h4 class="text-white mb-3">Practice & Enjoy</h4>
+                                        <p class="text-white">Watch your child develop language skills while enjoying the beauty of Malayalam.</p>
+                                        <div class="icon-holder">
+                                          <i class="bi-book"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center mt-5">
+                            <p class="text-white">
+                                Want to learn more?
+                                <a href="#" class="btn custom-btn custom-border-btn ms-3">Join Our Classes</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-section section-padding" id="section_4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <h2 class="mb-4">Frequently Asked Questions</h2>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="col-lg-5 col-12">
+                            <img src="images/faq_graphic.jpg" class="img-fluid" alt="FAQs">
+                        </div>
+
+                        <div class="col-lg-6 col-12 m-auto">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is Harisree?
+                                        </button>
+                                    </h2>
+
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Harisree is a learning platform specially designed for parents to overcome their barriers in communication with the young generation in Malayalam. This issue is very specific for parents living outside Kerala. Harisree also provides opportunities to develop language skills in Malayalam.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How do I choose the right level for my child?
+                                    </button>
+                                    </h2>
+
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            We recommend starting with Level 1 if your child is new to Malayalam. If they already know the alphabet, you can begin with Level 2. Our assessment test can also help determine the appropriate level.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Is this platform suitable for parents who don't know Malayalam?
+                                    </button>
+                                    </h2>
+
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Absolutely! Harisree is designed to help both children and parents learn Malayalam together. Our child-friendly approach makes it easy for everyone to follow along.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section section-padding" id="section_5" style="background-color: #f8f9fa;">
+                <div class="container">
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-lg-8 col-12 text-center">
+                            <h2 class="mb-3 fw-bold">Get in touch</h2>
+                            <p class="lead text-muted">We'd love to hear from you! Reach out for inquiries or to join our classes.</p>
+                        </div>
+                    </div>
+            
+                    <div class="row g-4 justify-content-center">
+                        <!-- Google Map Card -->
+                        <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+                            <div class="card h-100 border-0 shadow-sm overflow-hidden">
+
+                                <div class="card-body p-0">
+                                    <iframe class="google-map w-100" 
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.982068480226!2d76.3438103147948!3d9.931876992900932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0873e6b7d5e0a5%3A0x6b7d5e0a5b0873e6!2sEdachira%2C%20Kochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                                            height="300" 
+                                            style="border:0;" 
+                                            allowfullscreen="" 
+                                            loading="lazy"
+                                            title="Harisree Location Map"></iframe>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Contact Info Cards -->
+                        <div class="col-lg-7 col-md-12">
+                            <div class="row g-4 h-100">
+                                <!-- Head Office Card -->
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body">
+                                            <h4 class="card-title fw-bold text-primary mb-4">
+                                                <i class="bi bi-building me-2"></i>Head Office
+                                            </h4>
+                                            <p class="mb-4">
+                                                Brown 17E, Skyline Ivy League,<br>
+                                                Edachira, Kakkanadu,<br>
+                                                Kochi, Kerala 682030
+                                            </p>
+                                            <hr>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-3 d-flex align-items-center">  <!-- Changed to align-items-center -->
+                                                    <i class="bi bi-telephone text-primary me-2"></i>  <!-- Removed mt-1 -->
+                                                    <div>
+                                                        <a href="tel:9495374294" class="text-decoration-none text-dark">+91 94953 74294</a>
+                                                    </div>
+                                                </li>
+                                                <li class="d-flex align-items-center">  <!-- Changed to align-items-center -->
+                                                    <i class="bi bi-telephone text-primary me-2"></i>  <!-- Removed mt-1 -->
+                                                    <div>
+                                                        <a href="tel:9447417093" class="text-decoration-none text-dark">+91 94474 17093</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Join Classes Card -->
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body">
+                                            <h4 class="card-title fw-bold text-primary mb-4">
+                                                <i class="bi bi-people me-2"></i>Join Our Classes
+                                            </h4>
+                                            <p class="mb-4">
+                                                Welcome to our online classes. For further information, reply with Bio-Data and E-mail ID.
+                                            </p>
+                                            <hr>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-3 d-flex align-items-center">  <!-- Changed to align-items-center -->
+                                                    <i class="bi bi-envelope text-primary me-2"></i>  <!-- Removed mt-1 -->
+                                                    <div>
+                                                        <a href="mailto:info@harisreemalayalam.com" class="text-decoration-none text-dark">
+                                                            info@harisreemalayalam.com
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="d-flex align-items-center">  <!-- Changed to align-items-center -->
+                                                    <i class="bi bi-clock text-primary me-2"></i>  <!-- Removed mt-2 -->
+                                                    <span>Mon-Sat: 7:00AM-10:00PM (IST)</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+        </main>
+        <footer class="py-5 bg-white text-dark">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Brand Info Column -->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <div class="footer-brand">
+                            <h4 class="mb-3 fw-bold fs-5">Harisree</h4>
+                            <p class="text-muted mb-4 fs-6">Child-friendly Malayalam learning platform designed to make language acquisition fun, engaging, and effective for children of all ages.</p>
+                            <div class="social-icons">
+                                <a href="#" class="text-primary me-3" title="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+                                <a href="#" class="text-primary me-3" title="Twitter"><i class="bi bi-twitter fs-5"></i></a>
+                                <a href="#" class="text-primary me-3" title="Instagram"><i class="bi bi-instagram fs-5"></i></a>
+                                <a href="#" class="text-primary" title="YouTube"><i class="bi bi-youtube fs-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links Column -->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="mb-3 fw-bold fs-5">Quick Links</h5>
+                        <ul class="list-unstyled footer-links">
+                            <li class="mb-2"><a href="#section_1" class="text-muted text-decoration-none hover-primary fs-6">Home</a></li>
+                            <li class="mb-2"><a href="#section_2" class="text-muted text-decoration-none hover-primary fs-6">Courses</a></li>
+                            <li class="mb-2"><a href="#section_3" class="text-muted text-decoration-none hover-primary fs-6">How it Works</a></li>
+                            <li class="mb-2"><a href="#section_4" class="text-muted text-decoration-none hover-primary fs-6">FAQs</a></li>
+                            <li class="mb-2"><a href="#section_5" class="text-muted text-decoration-none hover-primary fs-6">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Info Column -->
+                    <div class="col-lg-3 col-md-6 offset-lg-1">
+                        <h5 class="mb-3 fw-bold fs-5">Contact Us</h5>
+                        <ul class="list-unstyled contact-info">
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="bi bi-geo-alt text-primary me-2 fs-5 mt-1"></i>
+                                <span class="text-muted fs-6">Edachira, Ernakulam, Kerala 682030</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="bi bi-telephone text-primary me-2 fs-5 mt-1"></i>
+                                <a href="tel:+919495374294" class="text-muted text-decoration-none hover-primary fs-6">+91 94953 74294</a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="bi bi-envelope text-primary me-2 fs-5 mt-1"></i>
+                                <a href="mailto:info@harisreemalayalam.com" class="text-muted text-decoration-none hover-primary fs-6">
+                                    info@harisreemalayalam.com
+                                </a>
+                            </li>
+                            <li class="d-flex align-items-start">
+                                <i class="bi bi-clock text-primary me-2 fs-5 mt-1"></i>
+                                <span class="text-muted fs-6">Mon-Sat: 7:00 AM-10:00 PM (IST)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <hr class="my-5">
+                
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <p class="mb-0 text-muted fs-6">&copy; 2025 Harisree. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0 text-muted fs-6">
+                            Designed with <i class="bi bi-heart-fill text-danger"></i> for Malayalam learners
+                            <span class="mx-2">|</span>
+                            <span>Powered by Better Pagelabs</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/custom.js"></script>
+        <script>
+            // Initialize tab animations
+            document.addEventListener('DOMContentLoaded', function() {
+                const tabPanes = document.querySelectorAll('.tab-pane');
+                
+                // Add slide animation to tabs
+                tabPanes.forEach(pane => {
+                    pane.addEventListener('show.bs.tab', function() {
+                        this.classList.add('animate__slideInRight');
+                    });
+                    
+                    pane.addEventListener('hidden.bs.tab', function() {
+                        this.classList.remove('animate__slideInRight');
+                    });
+                });
+                
+                // Add hover effects to cards
+                const customBlocks = document.querySelectorAll('.custom-block');
+                customBlocks.forEach(block => {
+                    block.addEventListener('mouseenter', function() {
+                        this.classList.add('animate__pulse');
+                    });
+                    
+                    block.addEventListener('mouseleave', function() {
+                        this.classList.remove('animate__pulse');
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
